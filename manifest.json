@@ -1,0 +1,24 @@
+{
+  "name": "Adebusola & Martinez — Wedding Invitation",
+  "short_name": "AM Wedding",
+  "description": "Together with our families, we joyfully invite you to celebrate our wedding.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#3c111e",
+  "theme_color": "#3c111e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+node_modules
+ts
+package.json
+package-lock.json
+tsconfig.json
+google-apps-script
+firebase.json
+firestore.rules
+.firebaserc
+README.md
+.git
+.gitignore
+strip-comments.script.js

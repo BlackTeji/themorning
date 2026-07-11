@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /rsvps/{rsvpId} {
+      allow create: if isValidRsvp(request.resource.data);
+      allow read, update, delete: if false;
+    }
+
+    function isValidRsvp(data) {
+      return data.keys().hasAll(['fullName', 'email', 'phone', 'attending', 'guestCount', 'message', 'submittedAt'])
+        && data.fullName is string && data.fullName.size() > 1 && data.fullName.size() < 200
+        && data.email is string && data.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')
+        && data.phone is string && data.phone.size() < 40
+        && (data.attending == 'yes' || data.attending == 'no')
+        && data.guestCount is int && data.guestCount >= 1 && data.guestCount <= 10
+        && data.message is string && data.message.size() < 1000;
+    }
+  }
+}

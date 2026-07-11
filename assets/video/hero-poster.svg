@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#240a12"/>
+      <stop offset="55%" stop-color="#6e2132"/>
+      <stop offset="100%" stop-color="#b9683f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="68%" r="30%">
+      <stop offset="0%" stop-color="#f6e2b8" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#d6c3a5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d6c3a5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8f3a4c"/>
+      <stop offset="100%" stop-color="#3c111e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#sun)"/>
+  <rect y="760" width="1920" height="320" fill="url(#water)" opacity="0.85"/>
+  <!-- horizon glints -->
+  <g stroke="#f6e2b8" stroke-opacity="0.35" stroke-width="2">
+    <line x1="860" y1="770" x2="1060" y2="770"/>
+    <line x1="900" y1="800" x2="1020" y2="800"/>
+    <line x1="840" y1="830" x2="1080" y2="830"/>
+  </g>
+</svg>

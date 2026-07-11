@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#240a12"/>
+      <stop offset="100%" stop-color="#6e2132"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="100%" r="75%">
+      <stop offset="0%" stop-color="#d6c3a5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d6c3a5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="600" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="160" fill="#D6C3A5" text-anchor="middle" letter-spacing="10">AM</text>
+  <text x="600" y="410" font-family="Georgia, serif" font-size="34" fill="#FAF7F2" text-anchor="middle" letter-spacing="4">AMARA &amp; JULIAN</text>
+  <text x="600" y="452" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#ECDFC8" text-anchor="middle" letter-spacing="3">OCTOBER 10, 2026</text>
+</svg>
